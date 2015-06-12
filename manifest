@@ -5,9 +5,9 @@
 
 package_sets:
    - github: rock-core/package_set
-     branch: rock1505
+     branch: master
    - github: rock-core/rock-package_set
-     branch: rock1505
+     branch: master
    - github: envire/package_set
      branch: master
    # Uncomment to enable the Rock/ROS bridge
