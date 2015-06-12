@@ -19,7 +19,7 @@ if ! test -f $PWD/autoproj_bootstrap; then
     $DOWNLOADER $AUTOPROJ_BOOTSTRAP_URL
 fi
 
-$RUBY autoproj_bootstrap $@ git git@git.hb.dfki.de:$CONF_REPO branch=master push_to=git@git.hb.dfki.de:$CONF_REPO
+$RUBY autoproj_bootstrap $@ git git@github.com:$CONF_REPO branch=master push_to=git@github.com:$CONF_REPO
 if test "x$@" != "xlocaldev"; then
     . $PWD/env.sh
     autoproj update
