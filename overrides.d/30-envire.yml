@@ -1,0 +1,13 @@
+---
+- pkg_set:github:/envire/package_set.git:
+    branch: master
+    tag: ~
+    commit: 
+- base/types:
+    github: envire/base-types
+    branch: master
+    tag: ~
+- base/orogen/types:
+    github: envire/base-orogen-types
+    branch: master
+    tag: ~

@@ -5,11 +5,8 @@
 
 package_sets:
    - github: rock-core/package_set
-     branch: master
-   - github: rock-core/rock-package_set
-     branch: master
+   - github: rock-core/rock-package_set  
    - github: envire/package_set
-     branch: master
    # Uncomment to enable the Rock/ROS bridge
    # You will also have to uncomment some lines in the layout below
    # - gitorious: rock-ros/package_set
@@ -20,6 +17,7 @@ layout:
    - rock.core
    - envire/core
    - envire/maps
+   - envire/mars
    - test/class_loader
    # Uncomment to enable the Rock/ROS bridge
    # You will also have to uncomment some lines in the package_sets above

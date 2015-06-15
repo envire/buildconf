@@ -6,14 +6,3 @@
 #   - rtt
 #     branch: test
 #  
-
-overrides:
-    - base/types:
-        url: git@github.com:envire/base-types.git
-        push_to: git@github.com:envire/base-types.git
-        branch: master
-
-    - base/orogen/types:
-        url: git@github.com:envire/base-orogen-types.git
-        push_to: git@github.com:envire/base-orogen-types.git
-        branch: master
