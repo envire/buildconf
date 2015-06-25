@@ -5,9 +5,9 @@
     commit: 
 - base/types:
     github: envire/base-types
-    branch: master
+    branch: new_body_state
     tag: ~
 - base/orogen/types:
     github: envire/base-orogen-types
-    branch: master
+    branch: new_body_state
     tag: ~
