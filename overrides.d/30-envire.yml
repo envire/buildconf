@@ -11,3 +11,12 @@
     github: envire/base-orogen-types
     branch: new_body_state
     tag: ~
+
+# change the repo from gitorious to github
+# since gitorious is not available
+- base/templates/doc:
+    github: rock-core/base-templates-doc_preview
+    branch: rock-rc    
+- base/orogen/interfaces:
+    github: rock-core/base-orogen-interfaces
+    branch: rock-rc          
