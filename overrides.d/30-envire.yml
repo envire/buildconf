@@ -10,5 +10,7 @@
 - base/orogen/types:
     github: envire/base-orogen-types
     branch: new_body_state
-    tag: ~
+    tag:
+- tools/class_loader:
+    tag: 0.3.2
 
