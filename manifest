@@ -5,7 +5,7 @@
 
 package_sets:
    - github: rock-core/package_set
-   - github: rock-core/rock-package_set  
+   - github: rock-core/rock-package_set
    - github: envire/package_set
    # Uncomment to enable the Rock/ROS bridge
    # You will also have to uncomment some lines in the layout below
@@ -15,10 +15,9 @@ package_sets:
 # imported by other rock sets.
 layout:
    - rock.core
-   - envire/core
-   - envire/maps
-   - envire/mars
-   - test/class_loader
+   - envire
+   - simulation/mars
+
    # Uncomment to enable the Rock/ROS bridge
    # You will also have to uncomment some lines in the package_sets above
    # - rock.ros
