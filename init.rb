@@ -26,8 +26,13 @@
 require 'autoproj/gitorious'
 Autoproj.gitorious_server_configuration('GITHUB', 'github.com', :http_url => 'https://github.com')
 
+Autoproj.gitorious_server_configuration('SPACEGIT', 'git.hb.dfki.de', :fallback_to_http => false, default: 'ssh,ssh', disabled_methods: 'http,git' )
+Autoproj.gitorious_server_configuration('DFKIGIT', 'git.hb.dfki.de', :fallback_to_http => false, default: 'ssh,ssh', disabled_methods: 'http,git')
+
 Autoproj.env_inherit 'CMAKE_PREFIX_PATH'
 
-Autobuild.env_set 'LC_NUMERIC','C'
-Autobuild.env_set 'ROCK_FORCE_FLAVOR', 'stable'
+Autobuild.env_set 'ROCK_SELECTED_FLAVOR','stable'
+Autobuild.env_set 'NDLCOM_ROBOTCONFIG','COMPI'
 
+Autobuild.env_set 'LANG','C'
+Autobuild.env_set 'LC_NUMERIC','C'
