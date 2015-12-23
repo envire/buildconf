@@ -1,15 +1,13 @@
 ---
 - pkg_set:github:/envire/package_set.git:
     branch: master
-    tag: ~
-    commit: 
+    tag:
+    commit:
 - base/types:
-    github: envire/base-types
-    branch: new_body_state
-    tag: ~
+    branch: master
+    tag:
 - base/orogen/types:
-    github: envire/base-orogen-types
-    branch: new_body_state
+    branch: master
     tag:
 - tools/class_loader:
     tag: 0.3.2
