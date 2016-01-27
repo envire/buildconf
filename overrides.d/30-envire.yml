@@ -11,4 +11,8 @@
     tag:
 - tools/class_loader:
     tag: 0.3.2
+- tools/orogen:
+    github: envire/orogen
+    branch: opaque_autogen
+    tag:
 
