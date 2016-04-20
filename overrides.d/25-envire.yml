@@ -19,6 +19,9 @@
     gitlab: rock-dfki/smurf
     branch: envire_smurf
 
-- tools/orogen:
+- tools/*:
+    branch: master
+
+- tools/orogen/*:
     branch: master
 
