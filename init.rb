@@ -31,7 +31,7 @@ Autoproj.gitorious_server_configuration('DFKIGIT', 'git.hb.dfki.de', :fallback_t
 
 Autoproj.env_inherit 'CMAKE_PREFIX_PATH'
 
-Autobuild.displayed_error_line_count = 'ALL'
+#Autobuild.displayed_error_line_count = 'ALL'
 
 Autobuild.env_set 'LANG','C'
 Autobuild.env_set 'LC_NUMERIC','C'
