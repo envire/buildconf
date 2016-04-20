@@ -3,15 +3,22 @@
     branch: master
     tag:
     commit:
+
 - base/types:
     branch: master
     tag:
+
 - base/orogen/types:
     branch: master
     tag:
+
 - tools/class_loader:
     tag: 0.3.2
+
 - tools/smurf:
     gitlab: rock-dfki/smurf
     branch: envire_smurf
+
+- tools/orogen:
+    branch: master
 
