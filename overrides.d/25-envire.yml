@@ -12,6 +12,9 @@
     branch: master
     tag:
 
+- base/orogen/std:
+    branch: master
+
 - tools/class_loader:
     tag: 0.3.2
 
@@ -20,4 +23,10 @@
     branch: envire_smurf
 
 - orogen:
+    branch: master
+
+- tools/*:
+    branch: master
+
+- tools/orogen/*:
     branch: master
