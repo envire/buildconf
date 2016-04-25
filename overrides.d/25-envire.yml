@@ -30,3 +30,6 @@
 
 - tools/orogen/*:
     branch: master
+
+- tools/class_loader:
+    branch: indigo-devel
