@@ -35,3 +35,4 @@ Autoproj.env_inherit 'CMAKE_PREFIX_PATH'
 
 Autobuild.env_set 'LANG','C'
 Autobuild.env_set 'LC_NUMERIC','C'
+Autobuild.env_set 'ROCK_SELECTED_FLAVOR','master'
