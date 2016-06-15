@@ -7,6 +7,7 @@ package_sets:
    - github: rock-core/package_set
    - github: rock-core/rock-package_set
    - github: rock-simulation/package_set
+   - github: rock-cpp/package_set
    - github: envire/package_set
    - spacegit: rock-dfki/package_set
 
