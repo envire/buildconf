@@ -9,6 +9,7 @@ package_sets:
    - github: rock-simulation/package_set
    - github: rock-cpp/package_set
    - github: envire/package_set
+   - github: rock-gui/osgviz-package_set
    - spacegit: rock-dfki/package_set
 
    # Uncomment to enable the Rock/ROS bridge
