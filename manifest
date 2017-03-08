@@ -1,5 +1,5 @@
 package_sets:
-    - github: envire/package_set
+    - dfkigit: nniemann/custom_envire_packageset
 
 layout:
-    - envire
+    - github: envire/core
