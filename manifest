@@ -3,4 +3,4 @@ package_sets:
       url: https://github.com/envire/envire-package_set.git
 
 layout:
-	- git: envire/core
+	- envire/envire_core
