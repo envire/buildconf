@@ -1,5 +1,6 @@
 package_sets:
-    - dfkigit: nniemann/custom_envire_packageset
+    - type: git
+      url: https://github.com/envire/envire-package_set.git
 
 layout:
-    - github: envire/core
+    - envire/core
