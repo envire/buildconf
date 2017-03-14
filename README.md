@@ -7,11 +7,8 @@ This repository contains a minimal buildconfig to build and install the envire *
 - create a clean, minimal package\_set?
 
 ### Step by step
-1. Create a project folder
-   ```
-   cd ~
-   mkdir dev && cd dev
-   ```
+1. Create a folder for the project. It will contain the autoproj_bootstrap script, 
+envire/core/ plus all needed dependencies and an 'install'-directory with binaries and includes.
 2. Download the autoproj bootstrap script:
    ```
    wget http://rock-robotics.org/autoproj_bootstrap
