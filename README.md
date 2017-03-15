@@ -15,7 +15,7 @@ envire/core/ plus all needed dependencies and an 'install'-directory with binari
    ```
 3. Run the script and give it this repository as input config
    ```
-   ruby autoproj_bootstrap git git@git.hb.dfki.de:nniemann/custom_envire_buildconf.git
+   ruby autoproj_bootstrap git git@git.hb.dfki.de:pbr/envire_standalone_buildconf.git
    ```
 4. Set environment variables for the project
    ```
@@ -26,7 +26,7 @@ envire/core/ plus all needed dependencies and an 'install'-directory with binari
    amake
    ```
 6. You will be asked how to access gitorius, github and the dfki gitlab. Choose wisely! (Or just use the default settings by pressing [ENTER])
-7. **Which flavor of Rock do you want to use?** -- Choose "master". It won't install all of Rock, just some dependencies like base-types etc.
+7. **Which flavor of Rock do you want to use?** -- Choose "**master**". It won't install all of Rock, just some dependencies like base-types etc.
 8. Further decisions I made (always default!)
    - Do you need compatibility with OCL ? (yes or no) [no] no
    - the target operating system for Orocos/RTT (gnulinux, xenomai, or macosx) [gnulinux] gnulinux
