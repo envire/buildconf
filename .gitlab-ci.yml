@@ -1,0 +1,27 @@
+image: buildpack-deps:trusty
+
+before_script:
+  - apt-get update -qq
+  - apt-get install -qq -y python-pexpect ruby2.0
+
+build:
+  stage: build
+  tags:
+    - docker
+  script:
+    - "git config --global user.email gitlab-runner@example.com"
+    - "git config --global user.name GitLab-Runner"
+    - "mkdir ~/envire_standalone"
+    - "cd ~/envire_standalone"
+    - "wget https://raw.githubusercontent.com/rock-core/autoproj/stable/bin/autoproj_bootstrap -O /tmp/autoproj_bootstrap"
+    - "$CI_PROJECT_DIR/ci_scripts/run_autoproj_bootstrap.py /tmp/autoproj_bootstrap $CI_PROJECT_DIR"
+    - "source ~/envire_standalone/env.sh"
+    - "$CI_PROJECT_DIR/ci_scripts/run_amake.py"
+    - "autoproj snapshot $CI_PROJECT_DIR/snapshot"
+    - "cp -ax ~/envire_standalone/install/log $CI_PROJECT_DIR/logs"
+  artifacts:
+    name: "${CI_PROJECT_NAME}_${CI_PIPELINE_ID}"
+    paths:
+      - snapshot/
+      - logs/
+    expire_in: 1 year
