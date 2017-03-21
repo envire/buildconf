@@ -4,13 +4,7 @@
 #
 
 package_sets:
-   - github: rock-core/package_set
-   - github: rock-core/rock-package_set
-   - github: rock-simulation/package_set
-   - github: rock-cpp/package_set
    - github: envire/package_set
-   - github: rock-gui/osgviz-package_set
-   - spacegit: rock-dfki/package_set
 
    # Uncomment to enable the Rock/ROS bridge
    # You will also have to uncomment some lines in the layout below
@@ -19,10 +13,8 @@ package_sets:
 # Layout. Note that the rock.base and orocos.toolchain sets are
 # imported by other rock sets.
 layout:
-   - rock.core
-   - envire
-   - slam/orogen/pcl
-   - gui/vizkit3d_pcl
+   - envire/envire_core
+   - envire/tutorials
 
 # Ignoring packages: same principle than package exclusion, but this time the
 # packages are considered to be installed and up-to-date. This is useful if you
