@@ -21,15 +21,19 @@ envire/core/ plus all needed dependencies and an 'install'-directory with binari
    ```
    source env.sh
    ```
-5. Build it.
+5. Update it.
+   ```
+   aup
+   ```
+6. Build it.
    ```
    amake
    ```
-6. You will be asked how to access gitorius, github and the dfki gitlab. Choose wisely! (Or just use the default settings by pressing [ENTER])
-7. **Which flavor of Rock do you want to use?** -- Choose "**master**". It won't install all of Rock, just some dependencies like base-types etc.
-8. Further decisions I made (always default!)
+7. You will be asked how to access gitorius, github and the dfki gitlab. Choose wisely! (Or just use the default settings by pressing [ENTER])
+8. **Which flavor of Rock do you want to use?** -- Choose "**master**". It won't install all of Rock, just some dependencies like base-types etc.
+9. Further decisions I made (always default!)
    - Do you need compatibility with OCL ? (yes or no) [no] no
    - the target operating system for Orocos/RTT (gnulinux, xenomai, or macosx) [gnulinux] gnulinux
    - which CORBA implementation should the RTT use ? [omniorb] omniorb
    - whether C++11 should be enabled for Rock packages [no] no
-9. Done! See `./install/`
+10. Done! See `./install/`
