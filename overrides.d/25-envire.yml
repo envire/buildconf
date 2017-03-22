@@ -18,9 +18,10 @@
 - tools/class_loader:
     tag: 0.3.2
 
-- tools/smurf:
-    gitlab: rock-dfki/smurf
-    branch: envire_smurf
+- tools/configmaps:
+    github: rock-simulation/configmaps
+    branch: restructured
+    tag: ~ 
 
 - orogen:
     branch: master
@@ -35,6 +36,16 @@
     branch: indigo-devel
 
 - gui/vizkit3d:
-  github: planthaber/gui-vizkit3d
-  branch: osgviz
-  tag: ~
+    github: envire/gui-vizkit3d
+    branch: osgviz
+    commit: 9fde0b759e5540c64bebdd6fb0f5abafdc35d932
+
+# Eventually urdfdom should be switched to 1.0.0 (this requires a lot of boost::shared_ptr-fixes, however)
+- control/urdfdom:
+    branch: 0.4
+    tag: ~
+    commit: ~
+- control/urdfdom_headers:
+    branch: 0.4
+    tag: ~
+    commit: ~

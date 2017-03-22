@@ -15,6 +15,7 @@ package_sets:
 layout:
    - envire/envire_core
    - envire/tutorials
+   #- gui/vizkit3d_pcl
 
 # Ignoring packages: same principle than package exclusion, but this time the
 # packages are considered to be installed and up-to-date. This is useful if you
