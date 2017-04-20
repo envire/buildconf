@@ -38,9 +38,8 @@
 - gui/vizkit3d:
     github: envire/gui-vizkit3d
     branch: osgviz
-# incompatible with envire_visualizer (vizkit3d --> qmainwidget for addDockWidget)
-#   commit: 9fde0b759e5540c64bebdd6fb0f5abafdc35d932
-    commit: 247c5c92978899ac3f1be9853e4742e7c61f4676
+# envire fork of vizkit, should be stable enough to not specify a certain commit
+#   commit: 247c5c92978899ac3f1be9853e4742e7c61f4676
 
 # Eventually urdfdom should be switched to 1.0.0 (this requires a lot of boost::shared_ptr-fixes, however)
 - control/urdfdom:
