@@ -10,10 +10,14 @@ envire/core/ plus all needed dependencies and an 'install'-directory with binari
    wget http://rock-robotics.org/autoproj_bootstrap
    ```
 3. Run the script and give it this repository as input config:
-   `ruby autoproj_bootstrap git git@github.com:envire/buildconf.git branch=minimalInstall`
-	Or use the https-url of the repository if you have not set up an ssh-key and are getting
-	permission-denied errors:
-	`ruby autoproj_bootstrap git https://github.com/envire/buildconf.git branch=minimalInstall`
+   ```
+	ruby autoproj_bootstrap git git@github.com:envire/buildconf.git branch=minimalInstall
+   ```
+   Or use the https-url of the repository if you have not set up an ssh-key and are getting
+   permission-denied errors:
+   ```
+   ruby autoproj_bootstrap git https://github.com/envire/buildconf.git branch=minimalInstall
+   ```
 4. Set environment variables for the project:
    ```
    source env.sh
