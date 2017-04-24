@@ -1,10 +1,6 @@
 ## Envire "Standalone" Installation
 This repository contains a minimal buildconfig to build and install the envire ***core*** package.
 
-### TODO
-- add more envire packages, current buildconf only installs envire-envire\_core
-- add a envire\_semantic extension
-- create a clean, minimal package\_set?
 
 ### Step by step
 1. Create a folder for the project. It will contain the autoproj_bootstrap script, 
@@ -13,19 +9,19 @@ envire/core/ plus all needed dependencies and an 'install'-directory with binari
    ```
    wget http://rock-robotics.org/autoproj_bootstrap
    ```
-3. Run the script and give it this repository as input config
+3. Run the script and give it this repository as input config:
    ```
    ruby autoproj_bootstrap git git@git.hb.dfki.de:pbr/envire_standalone_buildconf.git
    ```
-4. Set environment variables for the project
+4. Set environment variables for the project:
    ```
    source env.sh
    ```
-5. Update it.
+5. Update it:
    ```
    aup
    ```
-6. Build it.
+6. Build it:
    ```
    amake
    ```
