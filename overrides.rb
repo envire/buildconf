@@ -30,6 +30,20 @@ if Autoproj.respond_to?(:post_import)
     end
 end
 
+Autobuild::Package.each do |name, pkg|
+    if pkg.kind_of?(Autobuild::CMake)
+        cxx_flags = "#{pkg.defines['CMAKE_CXX_FLAGS']} #{ENV['CXXFLAGS']}"
+        if cxx_flags !~ /-std=c\+\+11/
+            pkg.define "CMAKE_CXX_FLAGS", "#{cxx_flags} -std=c++11"
+        end
+#    else
+#        cxx_flags = ENV['CXXFLAGS']
+#        if cxx_flags !~ /-std=c\+\+11/
+#            ENV['CXXFLAGS'] = "#{cxx_flags} -std=c++11"
+#        end
+    end
+end 
+
 
 
 Autoproj.env_set 'ORBgiopMaxMsgSize', 16000000
