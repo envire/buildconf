@@ -11,6 +11,8 @@
 #
 # See config.yml to set the prefix:/opt/autoproj/2.0 globally for all packages.
 
+Autoproj.add_osdeps_overrides 'slam/pcl', :force => true
+
 if Autoproj.respond_to?(:post_import)
     # Override the CMAKE_BUILD_TYPE if no tag is set
     Autoproj.post_import do |pkg|
@@ -44,6 +46,8 @@ Autobuild::Package.each do |name, pkg|
     end
 end 
 
+
+Autobuild::Package['slam/pcl'].define "WITH_VTK", "FALSE"
 
 
 Autoproj.env_set 'ORBgiopMaxMsgSize', 16000000
