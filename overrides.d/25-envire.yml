@@ -16,7 +16,7 @@
     branch: master
 
 - tools/class_loader:
-    tag: 0.3.2
+    tag: 0.3.6
 
 - tools/configmaps:
     github: rock-simulation/configmaps
@@ -50,3 +50,9 @@
     branch: 0.4
     tag: ~
     commit: ~
+    
+- slam/octomap:
+    branch: devel
+    commit: 689a09f1e0c2732b60c1ef7c85d4f6fc9ea63a2c
+
+
