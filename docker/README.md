@@ -16,16 +16,23 @@ be distributed to the users.
 Sometimes it is necessary to clean the docker cache if you want to rebuild the
 image. You just have to add `--no-cache` in this case.
 
+## Pulling the Image
+
+A prebuild docker image for EnviRe is available at
+[af01/envire](https://hub.docker.com/r/af01/envire/). You can pull it with
+
+    docker pull af01/envire
+
 ## Create Container
 
 Without GUI:
 
-    docker run -it envire:latest
+    docker run -it af01/envire:latest
 
 With GUI:
 
     xhost local:root
-    docker run -it -v /tmp/.X11-unix:/tmp/.X11-unix --privileged envire:latest
+    docker run -it -v /tmp/.X11-unix:/tmp/.X11-unix --privileged af01/envire:latest
 
 Additionally, you can mount external directories in the container. This can
 be useful because you might want to destroy and recreate containers from time
