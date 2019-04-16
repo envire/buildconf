@@ -34,7 +34,3 @@
 - tools/class_loader:
     branch: indigo-devel
 
-- gui/vizkit3d:
-  github: planthaber/gui-vizkit3d
-  branch: osgviz
-  tag: ~
