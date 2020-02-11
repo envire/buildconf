@@ -1,5 +1,5 @@
 ---
-- pkg_set:github:/envire/package_set.git:
+- pkg_set:github:/envire/envire-package_set.git:
     branch: 
     tag:
     commit: a8a2314a693ba60777aee997d7ef5ec37a22ae02
